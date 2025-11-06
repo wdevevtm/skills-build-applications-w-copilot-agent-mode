@@ -6,14 +6,18 @@
       "type": "python",
       "request": "launch",
       "program": "${workspaceFolder}/octofit-tracker/backend/manage.py",
-      "args": ["runserver", "0.0.0.0:8000"],
+      "args": [
+        "runserver",
+        "0.0.0.0:8000"
+      ],
       "django": true,
       "justMyCode": true,
       "python": "${workspaceFolder}/octofit-tracker/backend/venv/bin/python",
       "env": {
         "PYTHONPATH": "${workspaceFolder}/octofit-tracker/backend/venv/bin/python",
         "VIRTUAL_ENV": "${workspaceFolder}/octofit-tracker/backend/venv",
-        "PATH": "${workspaceFolder}/octofit-tracker/backend/venv/bin:${env:PATH}"
+        "PATH": "${workspaceFolder}/octofit-tracker/backend/venv/bin:${env:PATH}",
+        "CODESPACE_NAME": "${env:CODESPACE_NAME}"
       }
     },
     {
@@ -23,7 +27,9 @@
       "program": "${workspaceFolder}/octofit-tracker/frontend/node_modules/react-scripts/scripts/start.js",
       "cwd": "${workspaceFolder}/octofit-tracker/frontend",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["start"],
+      "runtimeArgs": [
+        "start"
+      ],
       "port": 3000,
       "env": {
         "REACT_APP_CODESPACE_NAME": "${env:CODESPACE_NAME}"
